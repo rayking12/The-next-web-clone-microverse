@@ -24,6 +24,17 @@ a {
   display: flex !important;
 }
 
+.logo-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row: 1 / span 2;
+}
+
+.hide-medium {
+  display: none !important;
+}
+
 
 .top-nav,
 .bottom-nav {
@@ -39,6 +50,7 @@ a {
   color: hsla(0,0%,100%,.6);
   line-height: 32px;
   max-height: 32px;
+  margin-top: 0;
 }
 .bottom-nav {
   font-size: 1.4rem;
