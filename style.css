@@ -1,11 +1,8 @@
-body {
-  padding: 0;
+* {
   margin: 0;
-}
-
-ul {
-  list-style-type: none;
-
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 a {
@@ -13,53 +10,126 @@ a {
   color: inherit;
 }
 
-.top-nav, 
-.bottom-nav,
-.top-nav ul,
-.bottom-nav ul {
+ul {
+  list-style: none;
+}
+
+.sm-container {
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.white {
+  color: white;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.flex {
   display: flex;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  width: 100vw;
+}
+
+.topnav {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 30px;
   align-items: center;
 }
-.bottom-nav {
+
+footer ul li {
+  display: inline;
+  margin: 0 0.2em;
+}
+
+.soc-icons li {
+  font-size: 16px;
+  color: white;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.category-list li {
+  border-bottom: 1px solid lightgray;
+  padding: 1rem 0;
+}
+
+.topnav ul li {
+  display: inline;
+  padding-left: 10px;
+  font-size: 13px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.main-nav {
+  justify-content: space-between;
+  height: 48px;
+}
+
+.nav-list {
+  display: flex;
+  margin: 0 20px;
+  padding: 1rem 2rem;
+  justify-content: space-between;
   justify-self: end;
 }
 
-
-.bottom-nav ul:last-of-type li:last-of-type {
-  display: flex !important;
-}
-
-.logo-small {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-row: 1 / span 2;
-}
-
-.hide-medium {
-  display: none !important;
-}
-
-
-.top-nav,
-.bottom-nav {
-  padding: 1rem 2rem;
-  justify-content: space-between;
-}
-
-.top-nav {
-  display: block;
-  background-color: #000;
-  font-size: 13px;
-  font-weight: 500;
-  color: hsla(0,0%,100%,.6);
-  line-height: 32px;
-  max-height: 32px;
-  margin-top: 0;
-}
-.bottom-nav {
-  font-size: 1.4rem;
+.nav-list ul li {
+  display: inline-block;
   padding: 0;
-  text-transform: uppercase;
-  color: #999;
+}
+
+
+.main-nav i {
+  font-size: 24px;
+  padding: 10px;
+  border-left: 1px solid grey;
+  height: 100%;
+}
+
+.logo {
+  background-color: black;
+  width: 106px;
+  padding: 15px;
+}
+
+.tnw-conf {
+  background-color: #fd3;
+  font-size: 12px;
+  text-align: left;
+  padding: 20px 10px;
+}
+.latest-div ul li {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.latest-div ul li a {
+  border-bottom: 1px solid goldenrod;
+  padding: 1rem 0;
+}
+.news-div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+.news-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: 100%;
 }
