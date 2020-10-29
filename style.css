@@ -39,6 +39,11 @@ body {
     height: 80px;
     padding: 16px 20px;
 }
+.div-main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 .page-nav {
     padding: 0 12px;
@@ -78,6 +83,7 @@ body {
     display: flex;
     justify-content: space-between;
     color: #aaa;
+    padding-top: 10px;
 }
 
 .topic-links {
@@ -206,6 +212,7 @@ body {
     grid-column-start: 1;
     grid-row: 1 / -1;
     position: relative;
+    top: 50px;
 }
 
 .cover-story {
