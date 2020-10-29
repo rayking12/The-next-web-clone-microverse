@@ -1,13 +1,11 @@
 
-
-/* Own styling starts here */
-
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Helvetica;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr;
     padding: 0;
@@ -24,7 +22,6 @@ body {
     font-size: 28px;
     font-family: sans-serif;
 }
-/* Page hearder styling */
 
 .main-nav {
     display: grid;
@@ -74,8 +71,6 @@ body {
     cursor: pointer;
     color: white;
 }
-
-/* Second nav bar  */
 
 .topic-nav {
     padding-left: 12px;
@@ -235,7 +230,7 @@ body {
 }
 
 .cover-story-cover {
-    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+    background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png") no-repeat;
     background-size: 100% 100%;
     height: 100%;
     display: flex;
@@ -275,7 +270,7 @@ body {
 }
 
 .cover-wrapper {
-    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png) no-repeat;
+    background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png") no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -284,7 +279,7 @@ body {
 }
 
 .cover-logo {
-    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
+    background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg") no-repeat;
     height: 100%;
     max-height: 112px;
     width: 50%;
@@ -323,19 +318,19 @@ body {
 
 /* Wrapper styling */
 
-.wrapper {
+.latest-wrapper {
     display: grid;
     grid-template-columns: 1fr minmax(150px, 1192px) 1fr;
     padding: 0 20px;
 }
 
-.wrapper > * {
+.latest-wrapper > * {
     margin-top: 28px;
 }
 
 /* Latest news styling */
 
-.latest-news {
+.latest-news-section {
     grid-column-start: 2;
 }
 
@@ -346,7 +341,7 @@ body {
     grid-gap: 24px;
 }
 
-.latest-news-header {
+.latest-news-heading {
     grid-column: 1 / -1;
 }
 
@@ -360,44 +355,77 @@ body {
     padding-top: 8px;
 }
 
-.latest-news-image {
-    background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fheader-image-buffalito-buffalogrid-portable-power-bank-lamp.png&signature=bbb31ac73202aa46c64b4c0cfa9af4f2");
+.latest-news-image-1 {
+    background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F02%2FSamsung-Galaxy-S10-fam-5-of-10.jpg&signature=114682c2436174458ace0612f9b7aa92");
     width: 100%;
     height: 50%;
     display: block;
     background-position: 50%;
     background-size: cover;
 }
-
-.latest-news-article:nth-of-type(2) .latest-news-image{
+.latest-news-image-2{
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_1f4c1746-518x270.png");
+    width: 100%;
+    height: 50%;
+    display: block;
+    background-position: 50%;
+    background-size: contain;
 }
-
-.latest-news-article:nth-of-type(3) .latest-news-image{
+.latest-news-image-3{
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Netflix-Assassins-Creed-516x270.jpg");
+    width: 100%;
+    height: 50%;
+    display: block;
+    background-position: 50%;
+    background-size: contain;
 }
 
-.latest-news-article:nth-of-type(4) .latest-news-image{
+.latest-news-image-4{
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Cyberpunk-2077-Keanu-Reeves-hed-513x270.jpg");
+    width: 100%;
+    height: 50%;
+    display: block;
+    background-position: 50%;
+    background-size: contain;
 }
 
-.latest-news-article:nth-of-type(5) .latest-news-image{
+.latest-news-image-5{
    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Untitled-design-2020-10-27T145403.424-1-516x270.png");
+   width: 100%;
+    height: 50%;
+    display: block;
+    background-position: 50%;
+    background-size: contain;
 }
 
-.latest-news-article:nth-of-type(6) .latest-news-image{
+ .latest-news-image-6{
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/intelamd-480x270.jpg");
+  width: 100%;
+    height: 50%;
+    display: block;
+    background-position: 50%;
+    background-size: contain;
 }
 
-.latest-news-article:nth-of-type(7) .latest-news-image{
+.latest-news-image-7{
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/google-logo-podium-540x270.png");
+  width: 100%;
+    height: 50%;
+    display: block;
+    background-position: 50%;
+    background-size: contain;
 }
 
-.latest-news-article:nth-of-type(8) .latest-news-image{
+.latest-news-image-8{
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/1-20-516x270.jpg");
+    width: 100%;
+    height: 50%;
+    display: block;
+    background-position: 50%;
+    background-size: contain;
 }
 
-.latest-news-byline {
+.latest-news-caption {
     padding-top: 4px;
     color: #aaa;
     font-size: 13px;
@@ -405,7 +433,7 @@ body {
     display: flex;
 }
 
-.latest-news-byline :nth-child(1)::after {
+.latest-news-caption :nth-child(1)::after {
     content: "\B7";
     display: block;
     float: right;
@@ -433,17 +461,11 @@ body {
         align-content: start;
     }
 
-    .latest-news-image {
-        width: 75px;
-        height: 75px;
-        grid-row: 1 / span 3;
-    }
-
     .latest-news-title {
         padding: 0;
     }
 
-    .latest-news-byline {
+    .latest-news-caption {
         padding: 0;
         grid-column-start: 2;
     }
@@ -758,7 +780,7 @@ body {
     padding-top: 8px;
 }
 
-.latest-deals-image {
+.latest-deals-image-1 {
     background-image: url("https://cdnp2.stackassets.com/e44f78edfcb13200279a2501b09d16c02b10f739/store/c200444f3c9de39ea53f56d44028fbc6277a145194261a66d8a2ed1b0a56/product_27619_product_shots1.jpg");
     width: 100%;
     height: 50%;
@@ -767,63 +789,63 @@ body {
     background-size: cover;
 }
 
-.latest-deals-image{
+.latest-deals-image-2{
     background-image: url("https://cdnp3.stackassets.com/fa74fc0ae00dca34fbe6bbeede760a176caf0a21/store/eb873f170e9b4a3722fb708fd8b520072c6a2de5201831f5310bb9030132/sale_48032_primary_image.jpg");
-      width: 100%;
+    width: 100%;
     height: 50%;
     display: block;
     background-position: 50%;
     background-size: cover;
 }
 
- .latest-deals-image{
+ .latest-deals-image-3{
    background-image: url("https://cdnp1.stackassets.com/db46f844d3bc0f538ec8bc67b1b18be252800838/store/3777e64125b8404b6b9d83e3c05ffadc23ec4911d18e7e3868d988a49714/sale_27873_primary_image.jpg");
-     width: 100%;
+    width: 100%;
     height: 50%;
     display: block;
     background-position: 50%;
     background-size: cover;
 }
 
-.latest-deals-image{
+.latest-deals-image-4{
    background-image: url("https://cdnp2.stackassets.com/e44f78edfcb13200279a2501b09d16c02b10f739/store/c200444f3c9de39ea53f56d44028fbc6277a145194261a66d8a2ed1b0a56/product_27619_product_shots1.jpg");
-     width: 100%;
+    width: 100%;
     height: 50%;
     display: block;
     background-position: 50%;
     background-size: cover;
 }
 
- .latest-deals-image{
+ .latest-deals-image-5{
    background-image: url("https://cdnp2.stackassets.com/e44f78edfcb13200279a2501b09d16c02b10f739/store/c200444f3c9de39ea53f56d44028fbc6277a145194261a66d8a2ed1b0a56/product_27619_product_shots1.jpg");
-     width: 100%;
+    width: 100%;
     height: 50%;
     display: block;
     background-position: 50%;
     background-size: cover;
 }
 
-.latest-deals-image{
+.latest-deals-image-6{
    background-image: url("https://cdnp3.stackassets.com/fa74fc0ae00dca34fbe6bbeede760a176caf0a21/store/eb873f170e9b4a3722fb708fd8b520072c6a2de5201831f5310bb9030132/sale_48032_primary_image.jpg");
-     width: 100%;
+    width: 100%;
     height: 50%;
     display: block;
     background-position: 50%;
     background-size: cover;
 }
 
-.latest-deals-image{
+.latest-deals-image-7{
    background-image: url("https://cdnp1.stackassets.com/db46f844d3bc0f538ec8bc67b1b18be252800838/store/3777e64125b8404b6b9d83e3c05ffadc23ec4911d18e7e3868d988a49714/sale_27873_primary_image.jpg");
-     width: 100%;
+    width: 100%;
     height: 50%;
     display: block;
     background-position: 50%;
     background-size: cover;
 }
 
- .latest-deals-image{
+ .latest-deals-image-8{
     background-image: url("https://cdnp3.stackassets.com/f50ae4bc622507ad557396df5fa7e4ae8c6e3424/store/574976e110da7b7a15e9a05affdda5637292a81a771732706e389ae789b5/sale_27421_primary_image.jpg");
-      width: 100%;
+    width: 100%;
     height: 50%;
     display: block;
     background-position: 50%;
@@ -831,11 +853,12 @@ body {
 }
 
 .latest-deals-caption {
-    padding-top: 4px;
-    color: rgb(34, 32, 32);
-    font-size: 13px;
-    font-weight: 400;
     display: flex;
+    padding-top: 3px;
+    color: rgb(71, 69, 69);
+    font-size: 15px;
+    font-weight: 350;
+    
 }
 
 .latest-deals-caption  :nth-child(1)::after {
@@ -920,44 +943,9 @@ body {
 
 .footer-social-link:hover {
     background: transparent;
-    box-shadow: 0 0 0 2px #333;
+    box-shadow: 0 0 0 2px #fff;
 }
 
-.icon {
-    display: block;
-    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) no-repeat;
-    background-size: 1296px 1296px;
-    height: 16px;
-    width: 16px;
-}
-
-.facebook {
-    background-position: -272px -272px;
-}
-
-.twitter {
-    background-position: -1024px -1024px;
-}
-
-.youtube {
-    background-position: -1280px -1280px;
-}
-
-.insta {
-    background-position: -416px -416px;
-}
-
-.pinterest {
-    background-position: -672px -672px;
-}
-
-.rss {
-    background-position: -816px -816px;
-}
-
-.email {
-    background-position: -576px -576px;
-}
 
 .footer-menu-links {
     display: flex;
