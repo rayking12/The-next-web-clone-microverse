@@ -82,7 +82,7 @@ li {
 
 .topic-nav {
   display: flex;
-  grid-area: "topic-nav";
+  grid-area: topic-nav;
   justify-content: space-between;
   color: #aaa;
   border-bottom: rgb(223, 220, 220) solid 2px;
@@ -245,7 +245,8 @@ li {
 }
 
 .cover-story-cover {
-  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png")
+  background: 
+  url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png")
     no-repeat;
   background-size: 100% 100%;
   height: 100%;
@@ -282,11 +283,12 @@ li {
 
 .main-cover-title {
   font-size: 56px;
-  font-weight: 700;
+  font-weight: 700px;
 }
 
 .cover-wrapper {
-  background: transparent
+  background: 
+    transparent
     url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png")
     no-repeat;
   background-size: cover;
@@ -297,7 +299,8 @@ li {
 }
 
 .cover-logo {
-  background: transparent
+  background: 
+    transparent
     url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg")
     no-repeat;
   height: 100%;
@@ -661,12 +664,14 @@ li {
 .article:nth-of-type(3) .most-popular-article,
 .article:nth-of-type(5) .most-popular-article,
 .article:nth-of-type(7) .most-popular-article {
-  background: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fheader-image-astrohaus-freewrite-traveler.png&signature=7e6fecc9ec94130581a44f39a60bbb60");
+  background: 
+  url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fheader-image-astrohaus-freewrite-traveler.png&signature=7e6fecc9ec94130581a44f39a60bbb60");
   background-size: cover;
 }
 
 .most-popular-article-darkener {
-  background: transparent
+  background: 
+    transparent
     url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png")
     no-repeat;
   position: absolute;
@@ -740,6 +745,7 @@ li {
   height: 96px;
   float: right;
 }
+
 .latest-articles img {
   display: inline-flex;
   height: 150px;
