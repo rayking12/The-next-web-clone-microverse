@@ -11,6 +11,10 @@ body {
   margin: 0;
 }
 
+li {
+  list-style-type: none !important;
+}
+
 .white {
   color: white;
 }
@@ -58,6 +62,10 @@ body {
   align-items: center;
 }
 
+.page-link {
+  padding-left: 10px;
+}
+
 .page-nav-right {
   margin-right: 12px;
 }
@@ -65,10 +73,6 @@ body {
 .page-nav-left .page-link {
   padding: 10px;
   margin-left: 0;
-}
-
-.page-link {
-  padding-left: 10px;
 }
 
 .page-link:hover {
@@ -81,9 +85,7 @@ body {
   grid-area: topic-nav;
   justify-content: space-between;
   color: #aaa;
-  flex-grow: 100%;
   border-bottom: rgb(223, 220, 220) solid 2px;
-  height: inherit;
 }
 
 .topic-links {
@@ -106,7 +108,7 @@ body {
   height: 48px;
   width: 48px;
   padding: 16px;
-  border-left: 1px solid #eeeeee;
+  border-left: 1px solid #eee;
 }
 
 .menu {
@@ -150,7 +152,7 @@ body {
   }
 
   .topic-nav {
-    display: flex-end;
+    justify-content: flex-end;
   }
 
   .logo {
@@ -159,8 +161,8 @@ body {
   }
 
   .menu {
-    display: block;
-    border-left: 1px solid #eeeeee;
+    display: none;
+    border-left: 1px solid #eee;
   }
 
   .menu a {
@@ -243,8 +245,7 @@ body {
 }
 
 .cover-story-cover {
-  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png")
-    no-repeat;
+  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png") no-repeat;
   background-size: 100% 100%;
   height: 100%;
   display: flex;
@@ -284,9 +285,7 @@ body {
 }
 
 .cover-wrapper {
-  background: transparent
-    url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png")
-    no-repeat;
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png") no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -295,9 +294,7 @@ body {
 }
 
 .cover-logo {
-  background: transparent
-    url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg")
-    no-repeat;
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg") no-repeat;
   height: 100%;
   max-height: 112px;
   width: 50%;
@@ -311,9 +308,11 @@ body {
   .cover-wrapper {
     display: none;
   }
+
   .cover-logo {
     display: none;
   }
+
   .cover-story-cover {
     justify-content: flex-end;
   }
@@ -325,6 +324,7 @@ body {
     grid-template-rows: repeat(3, 277px);
     height: 831px;
   }
+
   .main-cover-story {
     grid-row: 1 / span 1;
   }
@@ -381,6 +381,7 @@ body {
   background-position: 50%;
   background-size: cover;
 }
+
 .latest-news-image-2 {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_1f4c1746-518x270.png");
   width: 100%;
@@ -389,6 +390,7 @@ body {
   background-position: 50%;
   background-size: contain;
 }
+
 .latest-news-image-3 {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Netflix-Assassins-Creed-516x270.jpg");
   width: 100%;
@@ -659,9 +661,7 @@ body {
 }
 
 .most-popular-article-darkener {
-  background: transparent
-    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png)
-    no-repeat;
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png") no-repeat;
   position: absolute;
   background-size: 100% 100%;
   height: 100%;
@@ -732,6 +732,11 @@ body {
   width: 96px;
   height: 96px;
   float: right;
+}
+.latest-articles img {
+    display: inline-flex;
+    height: 150px;
+    width: 40%;
 }
 
 .apps-img {
@@ -939,12 +944,10 @@ body {
 }
 
 .footer-social-link {
-  display: block;
   background: #333;
   border-radius: 50%;
   height: 40px;
   width: 40px;
-  display: -ms-grid;
   display: grid;
   place-items: center;
   margin: 0 8px;
@@ -964,12 +967,12 @@ body {
   justify-content: center;
 }
 
-.footer-menu-link:hover {
-  color: white;
-}
-
 .footer-menu-link {
   margin: 0 6px;
+}
+
+.footer-menu-link:hover {
+  color: white;
 }
 
 .footer-copyrght-info {
@@ -991,8 +994,4 @@ body {
 .copyright-info-1 img {
   display: inline-block;
   height: 10px;
-}
-
-li {
-  list-style-type: none !important;
 }
