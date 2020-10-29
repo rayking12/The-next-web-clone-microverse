@@ -15,7 +15,7 @@ This project is a clone of the next web website main home page. In this project 
 - Vs code
 
 ## Live Demo
- [Live Demo Link](https://rawcdn.githack.com/rayking12/The-next-web-clone-microverse/e87be835453db9c9d66203e35d049d1447bd1cbc/index.html)
+ [Live Demo Link](https://rawcdn.githack.com/rayking12/The-next-web-clone-microverse/ca3117b00afd2684b63a06c809c86fd15672b79d/index.html)
 
 
 ## Authors
