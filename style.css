@@ -82,7 +82,7 @@ li {
 
 .topic-nav {
   display: flex;
-  grid-area: topic-nav;
+  grid-area: "topic-nav";
   justify-content: space-between;
   color: #aaa;
   border-bottom: rgb(223, 220, 220) solid 2px;
@@ -161,7 +161,7 @@ li {
   }
 
   .menu {
-    display: none;
+    display: block;
     border-left: 1px solid #eee;
   }
 
@@ -175,7 +175,7 @@ li {
 
   .menu span {
     background-color: #f42;
-    display: inline;
+    display: block;
     height: 2px;
     width: 15px;
     left: 14px;
@@ -245,7 +245,8 @@ li {
 }
 
 .cover-story-cover {
-  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png") no-repeat;
+  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png")
+    no-repeat;
   background-size: 100% 100%;
   height: 100%;
   display: flex;
@@ -285,7 +286,9 @@ li {
 }
 
 .cover-wrapper {
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png") no-repeat;
+  background: transparent
+    url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png")
+    no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -294,7 +297,9 @@ li {
 }
 
 .cover-logo {
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg") no-repeat;
+  background: transparent
+    url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg")
+    no-repeat;
   height: 100%;
   max-height: 112px;
   width: 50%;
@@ -321,16 +326,16 @@ li {
 @media screen and (max-width: 768px) {
   .cover-stories {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 277px);
-    height: 831px;
+    grid-template-rows: repeat(3, 100px);
+    height: 800px;
   }
 
   .main-cover-story {
-    grid-row: 1 / span 1;
+    grid-row: 1;
   }
 
   .main-cover-title {
-    font-size: 28px;
+    font-size: 25px;
   }
 }
 
@@ -661,7 +666,9 @@ li {
 }
 
 .most-popular-article-darkener {
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png") no-repeat;
+  background: transparent
+    url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png")
+    no-repeat;
   position: absolute;
   background-size: 100% 100%;
   height: 100%;
@@ -734,9 +741,9 @@ li {
   float: right;
 }
 .latest-articles img {
-    display: inline-flex;
-    height: 150px;
-    width: 40%;
+  display: inline-flex;
+  height: 150px;
+  width: 40%;
 }
 
 .apps-img {
