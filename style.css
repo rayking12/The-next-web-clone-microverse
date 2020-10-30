@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: sans-serif;
   display: -ms-grid;
   display: grid;
   grid-template-columns: 1fr;
@@ -12,7 +12,7 @@ body {
 }
 
 li {
-  list-style-type: none !important;
+  list-style-type: none;
 }
 
 .white {
@@ -44,7 +44,7 @@ li {
 }
 
 .top-nav {
-  padding-left: 10px;
+  padding-left: 0;
   grid-area: top-nav;
   background-color: #131313;
   color: rgba(255, 255, 255, 0.6);
@@ -85,7 +85,6 @@ li {
   grid-area: topic-nav;
   justify-content: space-between;
   color: #aaa;
-  border-bottom: rgb(223, 220, 220) solid 2px;
   position: sticky;
   top: 0;
 }
@@ -93,6 +92,7 @@ li {
 .topic-links {
   display: flex;
   padding: 10px 0 10px 40px;
+  margin-top: -10px;
 }
 
 .topic-link {
@@ -958,6 +958,7 @@ li {
 .footer-social-link i {
   color: #fff;
 }
+
 .footer-social-link:hover {
   background: transparent;
   box-shadow: 0 0 0 2px #333;
