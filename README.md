@@ -3,7 +3,7 @@ This project is a clone of the next web website main home page. In this project 
 
 ![microverse](https://camo.githubusercontent.com/3a5835d4f56c57cec85939ac345e43fef164c178/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6963726f76657273652d626c756576696f6c6574)
 
-![screenshot](images/Screenshot1.png)
+![screenshot](images/img.png)
 
  Clone of a home page page from [The Next Web](https://thenextweb.com)
 ## Built With
